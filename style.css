@@ -67,6 +67,7 @@ ul{
     position: relative;
 }
 .btn{
+
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -75,6 +76,7 @@ ul{
     font-weight: 700;
     display: inline-block;
     border: none;
+    margin-top: 20px;
     white-space: nowrap;
     background: var(--skin-color);
     transition: all 0.3s ease;
@@ -279,9 +281,9 @@ h3.my-profession{
     height: 400px;
 
 }
-/* .hidden{
+.hidden{
     display: none  !important;
-} */
+}
 .section .container{
     padding: 60px;
     padding-bottom: 70px;
@@ -353,12 +355,77 @@ h3.my-profession{
 .about .about-content .personal-info{
     flex: 0 0 60%;
     max-width: 60%;
-    background: red;
+  
     margin-top: 40px;
+}
+.about .about-content .personal-info .info-item{
+    flex:  0 0 50%;
+    max-width: 50%;
+    margin-top: 10px;
+}
+.about .about-content .personal-info .info-item p{
+    font-weight: 600;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .info-item .buttons{
+    margin-top: 25px;
+}
+.about .about-content .personal-info .info-item .buttons .btn{
+    margin-right: 15px;
+    margin-top: 10px;
 }
 .about .about-content .skills{
     flex: 0 0 40%;
     max-width: 40%;
-    background: rosybrown;
+    
     margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+  margin-bottom: 4px;
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.about .about-content .skills .skill-item .progress{
+    background: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background: var(--skin-color);
+}
+
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900)
+    ;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+
 }
