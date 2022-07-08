@@ -4,8 +4,10 @@
 
 html{
     scroll-behavior: smooth;
+   overflow-x: hidden;
    
 }
+
 /* @import url(color-1.css); */
 :root{
     --bg-black-900:#f2f2fc;
@@ -16,6 +18,13 @@ html{
 
 }
 
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700: #e9e9e9;
+}
 
 body{
     margin: 0;
@@ -44,11 +53,28 @@ ul{
     display: block;
   margin-top: -22px;
     padding: 0 30px;
-    /* top: 0;
-    right: 0;
-    z-index: 0; */
+    left: 270px;
     opacity: 1;
+    /* position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* z-index: 0; */
+    /* overflow-y: auto;
+    overflow-x: hidden; */ 
+
+    transition: all 0.3s ease;
+
+
+
 }
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: slide 1s ease;
+}
+
 .main-content{
     padding-left: 270px;
 }
@@ -104,6 +130,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 .aside .logo{
     position: absolute;
@@ -181,13 +208,18 @@ position: relative;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    left: 300px;
+    right: 300px;
     top: 20px;
     border-radius: 5px;
     background: var(--bg-black-100);
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+
+}
+.aside .nav-toggle.open span{
+    background: transparent;
 }
 .aside .nav-toggle span{
     height: 2px;
@@ -195,6 +227,10 @@ position: relative;
     background: var(--skin-color);
     display: inline-block;
     position: relative;
+}
+.aside .nav-toggle.open span::before{
+    transform: rotate(45deg);
+    top: 0;
 }
 .aside .nav-toggle span::before{
     content: '';
@@ -214,7 +250,10 @@ position: relative;
     bottom: -6px;
     left: 0;
 }
-
+.aside .nav-toggle.open span::after{
+    transform: rotate(-45deg);
+    top: 0;    
+}
 /* home */
 .home {
     min-height: 100vh;
@@ -383,7 +422,7 @@ h3.my-profession{
     margin-top: 25px;
 }
 .about .about-content .personal-info .info-item .buttons .btn{
-    margin-right: 15px;
+    /* margin-right: 15px; */
     margin-top: 10px;
 }
 .about .about-content .skills{
@@ -618,6 +657,24 @@ font-weight: 500;
     .aside{
         left: -270px;
     }
+    .aside.open{
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    .aside .nav-toggle{
+        display: flex;
+       left: 30px;
+    }
+    .aside.nav-toggle .open{
+        left: 300px;
+    }
+    .section{
+        left: 0;
+    }
+  .section.opan{
+    margin-left: 270px;
+    transition: all 0.4s ease;
+  }
     .main-content{
         padding-left:0 ;
     }
@@ -658,4 +715,27 @@ font-weight: 500;
         max-width: 100%;
     }
    
+}
+
+
+.socila{
+    width: 40px;
+    height: 40px;
+}
+
+.socila .socila-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    /* margin: 10px; */
+}
+.socila a {
+   margin: 20%;
+   color: var(--skin-color);
+   font-size: 18px;
 }

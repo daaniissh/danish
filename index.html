@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./colors/color-1.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -14,10 +14,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="colors/">
-  
+   
+    <link rel="stylesheet" href="colors/color-1.css" >
+    <link rel="stylesheet" href="./colors/color1-2.css" class="alternate-style" title="color-1" disabled />
+    <link rel="stylesheet" href="./colors/color-2.css" class="alternate-style" title="color-2" disabled/>
+    <link rel="stylesheet" href="./colors/color-3.css" class="alternate-style" title="color-3" disabled />
+    <link rel="stylesheet" href="./colors/color-4.css" class="alternate-style" title="color-4" disabled />
+    <link rel="stylesheet" href="./colors/color-5.css" class="alternate-style" title="color-5" disabled />
+   <link rel="stylesheet" href="colors/swicher.css">
   </head>
-  <body>
+  <body class="" >
     <!-- main container -->
     <div class="main-container">
       <!-- aside container start -->
@@ -30,25 +36,35 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href=""><i class="fa fa-user"></i>About</a>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
           </li>
           <li>
-            <a href=""><i class="fa fa-list"></i>services</a>
+            <a href="#service"><i class="fa fa-list"></i>services</a>
           </li>
           <li>
-            <a href=""><i class="fa fa-briefcase"></i>portfolio </a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>portfolio </a>
           </li>
           <li>
-            <a href=""><i class="fa fa-comments"></i>Services</a>
+            <a href="#contact"><i class="fa fa-comments red"></i>Contact Me</a>
           </li>
         </ul>
+        <div class="socila">
+          <div class="socila-icons">
+            <a href="https://www.instagram.com/_dani_xh_/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Muhammeddanishpk" target="_blank" > <i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammeddanishpk/g" target="_blank" > <i class="fa-brands fa-linkedin"></i></a>
+            
+           
+           
+          </div>
+        </div>
       </div>
       <!-- aside container end -->
       <div class="main-content">
-        <section class="home section hidden">
+        <section id="home" class="home section  hidden">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -56,7 +72,7 @@
                   Hello, my name is <span class="name">Muhammed Danish</span>
                 </h3>
                 <h3 class="my-profession">
-                  I' m a <span class="typing">Wed developer</span>
+                  I' m a <span class="typing"></span>
                 </h3>
                 <p>
                   Hi,my name is Muhammed Danish, i'm a student
@@ -72,7 +88,7 @@
           </div>
         </section>
         <!-- about -->
-        <section class="about section hidden">
+        <section id="about" class="about section hidden">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -175,7 +191,7 @@
           </div>
         </section>
         <!-- *service section -->
-        <section class=" hidden service section padd-15" >
+        <section id="service" class=" hidden service section padd-15" >
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -221,7 +237,7 @@
                     <i class="fa fa-code"></i>
                   </div>
                   <h4>Coding</h4>
-                    <p>“Programming today is a race between software engineers striving to build bigger and better idiot-proof programs,  Universe trying to produce bigger and better idiots.</p>
+                    <p>“ Programming today  is a race between software engineers striving to build bigger and better idiot -proof programs,  Universe trying to produce ,bigger and better idiots“Experience is the name everyone .</p>
                     
                   
                 </div>
@@ -250,7 +266,7 @@
           </div>
         </section>
         <!-- Portfolio -->
-        <section class="portfolio section padd-15 hidden "  >
+        <section id="portfolio" class="portfolio section padd-15 hidden "  >
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -334,14 +350,14 @@
           </div>
         </section>
         <!-- contact section -->
-        <section class= "contact section  ">
+        <section id="contact" class= "contact section  ">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
                 <h2>Contact Me</h2>
               </div>
             </div>
-            <h3 class="contact-title padd-15">Have You Any Auestion ?</h3>
+            <h3 class="contact-title padd-15">Have You Any Question ?</h3>
             <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
             <div class="row">
               <div class="contact-info-item padd-15">
@@ -411,13 +427,13 @@
     <!-- style switer -->
     <div class="style-switcher">
       <div class="style-swicher-toggler s-icon">
-        <i class="fas fa-cog fa-skin"  ></i>
+        <i class="fas fa-cog fa-spin"  ></i>
       </div>
       <div class="day-night s-icon">
         <i class="fas fa-moon"></i>
       </div>
       <h4>Theme Colors</h4>
-      <div class="colors">
+      <div class="colors ">
         <span class="color-1" onclick="setactivateStyle('color-1')" ></span>
         <span class="color-2" onclick="setactivateStyle('color-2')" ></span>
         <span class="color-3" onclick="setactivateStyle('color-3')" ></span>
@@ -425,6 +441,11 @@
         <span class="color-5" onclick="setactivateStyle('color-5')" ></span>
       </div>
     </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+     <script src="color.js"></script>
     <script src="app.js"></script>
+   
   </body>
 </html>
