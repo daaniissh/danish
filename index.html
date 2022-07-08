@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Danish</title>
     <link rel="stylesheet" href="style.css" />
-    
+    <link rel="shortcut icon" href="images/finely.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,6 +24,13 @@
    <link rel="stylesheet" href="colors/swicher.css">
   </head>
   <body class="" >
+<!-- alert for submit -->
+<div class="alert alert-hide">
+  <div class="messege">
+    <h2>Sended 📩</h2>
+  </div>
+</div>
+
     <!-- main container -->
     <div class="main-container">
       <!-- aside container start -->
@@ -42,10 +49,10 @@
             <a href="#about"><i class="fa fa-user"></i>About</a>
           </li>
           <li>
-            <a href="#service"><i class="fa fa-list"></i>services</a>
+            <a href="#service"><i class="fa fa-list"></i>Services</a>
           </li>
           <li>
-            <a href="#portfolio"><i class="fa fa-briefcase"></i>portfolio </a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio </a>
           </li>
           <li>
             <a href="#contact"><i class="fa fa-comments red"></i>Contact Me</a>
@@ -101,14 +108,7 @@
                   <div class="about-text padd-15">
                     <h3>I'm Muhammed Danish and <span>Wed Developer</span></h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Reiciendis nobis sunt laborum illum pariatur maxime sed
-                      dolorem eius! Officiis quam, qui doloremque quia
-                      temporibus id ratione deserunt repudiandae unde nesciunt
-                      voluptates, sunt ad ut consequatur in cum vitae
-                      perferendis odit natus voluptatibus similique deleniti
-                      rerum alias culpa! Quia exercitationem voluptate modi
-                      distinctio laborum necessitatibus labore.
+                      <p>Greetings!</p><p>My name is Muhammed Danish and I'm the owner of this web site.  I'm a Web developer  with a passion for coding.</p><p>I started I'm Coding with the idea of being able to offer the very best Web site to help peoples</p><p>If you are like me then you like coding too</p><p>If so, I've got your back!</p></ul><p>.I'm a studying  9th standard .I like programming . I think I'm so funny 😁 I'm living in God's on country "Kerela" </p><p>Please contact me if you need any help with the site at all!</p><p>I look forward to working with you!</p><p>-Muhammed Danish</p>
                     </p>
                   </div>
                 </div>
@@ -385,30 +385,33 @@
             <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
             <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGE</h4>
             <!-- contact form -->
+            <form action="https://sheetdb.io/api/v1/vati2gsxwc6oq" method="post" id="sheetdb-form">
             <div class="contact-form padd-15">
               <div class="row">
                 <div class="form-item col-6 padd-15">
                  <div class="form-group">
-                  <input type="text" class="form-controle" placeholder="Name" >
+                  <input type="text" name="data[name]" class="form-controle name" placeholder="Name" >
                  </div>
                 </div>
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
-                    <input type="email" class="form-controle" placeholder="Email" >
+                    <input type="email" class="form-controle email" 
+                   name="data[email]" placeholder="Email" >
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <input type="email" class="form-controle" placeholder="Subject" >
+                    <input type="text" 
+                   name="data[subject]" class="form-controle sub" placeholder="Subject" >
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
-                    <textarea class="form-controle" placeholder="Messegae" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="form-controle mes" placeholder="Messegae" name="data[mes]" id="" cols="30" rows="10"></textarea>
                   </div>
                 </div>
               </div>
@@ -421,13 +424,14 @@
                 </div>
               </div>
           </div>
+        </form>
         </section>
       </div>
     </div>
     <!-- style switer -->
     <div class="style-switcher">
       <div class="style-swicher-toggler s-icon">
-        <i class="fas fa-cog fa-spin"  ></i>
+        <i class="fa-solid fa-brush"></i>
       </div>
       <div class="day-night s-icon">
         <i class="fas fa-moon"></i>
@@ -446,6 +450,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
      <script src="color.js"></script>
     <script src="app.js"></script>
-   
+   <script src="form.js" ></script>
   </body>
 </html>

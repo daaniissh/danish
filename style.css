@@ -231,6 +231,7 @@ position: relative;
 .aside .nav-toggle.open span::before{
     transform: rotate(45deg);
     top: 0;
+    transition: all 1s ease;
 }
 .aside .nav-toggle span::before{
     content: '';
@@ -253,6 +254,8 @@ position: relative;
 .aside .nav-toggle.open span::after{
     transform: rotate(-45deg);
     top: 0;    
+    transition: all 1s ease;
+
 }
 /* home */
 .home {
@@ -652,8 +655,40 @@ font-weight: 500;
     height: 50px;
     padding: 0 50px;
 }
+.alert{
+    
+    position: fixed;
+    top: 10%;
+    left: 70%;
+    width: 150px;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+    background: var(--bg-black-100);
+    z-index: 999;
+    border-radius: 20px;
+    border: 1px solid var(--text-black-900);
+  }
+
+  .alert .messege{
+    margin-top: 18%;
+    margin-left: 5px;
+  }
+  .alert .messege h2{
+    color: var(--skin-color);
+    font-weight: 900;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .alert-hide{
+    display: none;
+  }
 
 @media(max-width:1199px){
+    .alert{
+        left:63%;
+    }
     .aside{
         left: -270px;
     }
@@ -701,9 +736,15 @@ font-weight: 500;
         max-width: 100%;
     }
     .home .home-img{
-        display: none;
+        display:  none;
+  
     }
+    .alert .messege{
+        left: -50%;
+    }
+    
 }
+
 @media (max-width:767px){
     .contact .contact-form .col-6,
     .contact .contact-info-item,
@@ -716,8 +757,14 @@ font-weight: 500;
     }
    
 }
-
-
+@media (max-width:444px){
+    .alert{
+        left: 50%;
+    }
+}
+.alert {
+    margin-left: -20%;
+}
 .socila{
     width: 40px;
     height: 40px;
@@ -739,3 +786,27 @@ font-weight: 500;
    color: var(--skin-color);
    font-size: 18px;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--skin-color);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--bg-black-900)    ;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--skin-color);
+    border-radius: 50px;
+    border: 3px solid var(--bg-black-100);
+  }
+
+ 
