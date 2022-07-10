@@ -799,21 +799,21 @@ font-weight: 500;
     .alert{
         left: 50%;
     }
-    /* .aside .nav{
+    .aside .nav{
         margin-top: -150px;
     }
     .socila-icons{
         margin-top: -250px;
-    } */
+    }
 }
 
 @media (max-width:410px){
-    /* .aside .nav{
+    .aside .nav{
         margin-top: -300px;
     }
     .socila-icons{
         margin-top: -370px;
-    } */
+    }
     
 }
 .alert {
