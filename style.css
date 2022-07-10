@@ -817,11 +817,11 @@ font-weight: 500;
 
 
 @media (max-width:410px){
-    .aside .nav{
-        margin-top: -430px;
+      .aside .nav{
+        margin-top: -340px;
     }
-     .socila-icons{
-        margin-top: -390px;
+    .socila-icons{
+        margin-top: -370px;
     }
     
 }
