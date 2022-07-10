@@ -780,39 +780,48 @@ font-weight: 500;
         max-width: 100%;
     }
 
-    /* .aside .nav{
+    .aside .nav{
         margin-top: -100px;
     }
     .socila-icons{
-        margin-top: -210px;
-    } */
+        margin-top: -100px;
+    }
 }
-/* @media (max-width:488px){
+@media(max-width:350px){
+    .aside .nav{
+        margin-top: -500px;
+    }
+    .socila-icons{
+        margin-top: -330px;
+    }
+}
+@media (max-width:488px){
      .aside .nav{
         margin-top: -100px;
     }
     .socila-icons{
         margin-top: -205px;
     }
-} */
+}
 @media (max-width:444px){
     .alert{
         left: 50%;
     }
-    .aside .nav{
+    /* .aside .nav{
         margin-top: -150px;
     }
     .socila-icons{
         margin-top: -250px;
-    }
+    } */
 }
+
 
 @media (max-width:410px){
     .aside .nav{
-        margin-top: -300px;
+        margin-top: -430px;
     }
     .socila-icons{
-        margin-top: -370px;
+        margin-top: -480px;
     }
     
 }
