@@ -688,7 +688,12 @@ font-weight: 500;
       transform: translateY(0px) scale(1);
     }
   }
+  .pkdanish::after{
+    content: "pkdanish329@gmail.com";
+    display: block;
+    white-space: pre-line;
 
+}
 
   .alert .messege{
     margin-top: 18%;
@@ -781,7 +786,8 @@ font-weight: 500;
     }
 
     .aside .nav{
-        margin-top: -55px;
+
+        margin-top: -70%;
     }
     .socila-icons{
         margin-top: -100px;
@@ -796,6 +802,16 @@ font-weight: 500;
     }
 }
 @media (max-width:488px){
+    .pkdanish{
+        /* color: red; */
+        display: none;
+    }
+    .pkdanish::after{
+        content: "pkdanish329 \A @gmail.com";
+        display: block;
+        white-space: pre-line;
+    
+    }
      .aside .nav{
         margin-top: -100px;
     }
@@ -817,8 +833,9 @@ font-weight: 500;
 
 
 @media (max-width:410px){
-      .aside .nav{
+    .aside .nav{
         margin-top: -340px;
+    
     }
     .socila-icons{
         margin-top: -370px;
@@ -964,3 +981,4 @@ font-weight: 500;
     animation: cursorAnim3 .5s forwards;
     border: 1px solid var(--skin-color);
 }
+
