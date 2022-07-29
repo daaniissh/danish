@@ -743,6 +743,7 @@ font-weight: 500;
         padding-left:0 ;
     }
     .about .about-content .personal-info .info-item p span{
+        line-break: anywhere;
         display: block;
         margin-left: 0;
     }
