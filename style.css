@@ -513,6 +513,7 @@ h3.my-profession {
 .service .service-item {
   flex: 0 0 33%;
   max-width: 33%;
+
   margin-bottom: 30px;
 }
 
